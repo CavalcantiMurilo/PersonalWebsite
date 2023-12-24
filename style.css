@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-
 *{
     margin: 0px;
     text-decoration: none;
@@ -15,6 +14,7 @@ nav{
     width: 100%;
     position: fixed;
     margin-top: 0px;
+    z-index: 1;
 }
 
 nav ul{
@@ -28,6 +28,121 @@ nav ul{
 a{
     color: #2b3141;
 }
+
+
+/* SEÇÃO "JORNADA */
+
+.jornada{
+    background: linear-gradient(to bottom, rgba(87, 130, 242, 0.9), rgba(78, 113, 204, 0.8), rgba(49, 90, 197, 0.7), rgba(38, 68, 147, 0.7));
+}
+
+.jornada h3{
+    padding-top: 8%;
+    text-align: center ;
+    font-size: 50px;
+    color: rgb(204, 215, 255);
+}
+
+.jornada h2{
+    font-size: 55px;
+    width: 20%; 
+    font-weight: 900;
+    padding: 2rem;
+}
+
+.jornada .titulo{
+    text-align: center;
+    color: #001F5A;
+}
+
+.jornada .descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.jornada .descricao ul li{
+    padding: 10px;
+    list-style:outside;
+}
+
+.linha-do-tempo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.linha-do-tempo:before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #001F5A;
+    left: 50%
+}
+
+.linha-do-tempo .ano{
+    font-size: 50px;
+    font-weight: 800;
+    color: #001F5A;
+}
+
+.linha-do-tempo .titulo{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.linha-do-tempo .parag-jornada{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ano2020, .ano2021, .ano2022, .ano2023{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ano2021 , .ano2023 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.ano2021 .descricao, .ano2023 .descricao {
+   max-width: 40%;
+   text-align: justify;
+   margin-left: 5%;
+}
+
+.ano2021 .ano, .ano2023 .ano{
+    margin-right: 30%;
+}
+
+.ano2020 , .ano2022 {
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.ano2020 .descricao, .ano2022 .descricao {
+    max-width: 40%;
+    text-align: justify;
+    margin-right: 5%;
+ }
+
+ .ano2020 .ano, .ano2022 .ano{
+    margin-left: 30%;
+}
+
+/* SEÇÃO "PROJETOS" */
+
+.ondas1{
+    fill: #6B94D3;
+    
+}
+
+
 
 
 
