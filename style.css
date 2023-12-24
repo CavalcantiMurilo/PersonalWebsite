@@ -25,8 +25,12 @@ nav ul{
     padding: 20px;
 }
 
-a{
+nav ul a{
     color: #2b3141;
+}
+
+nav ul a:hover{
+    color: #5b6992;
 }
 
 
@@ -135,7 +139,9 @@ a{
     margin-left: 30%;
 }
 
+
 /* SEÇÃO "PROJETOS" */
+
 
 .ondas1{
     fill: #6B94D3;
@@ -145,3 +151,126 @@ a{
 .projetos{
     background: linear-gradient(to bottom, #6B94D3, rgb(55, 83, 154));
 }
+
+.projetos h2{
+    font-size: 55px;
+    width: 20%; 
+    font-weight: 900;
+    padding: 2rem;
+    color: #001F5A;
+}
+
+.projetos .exibicao{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 5% 0;
+}
+
+.projetos .exib1, .projetos .exib2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+}
+
+.projetos .exib2{
+    flex-direction:row-reverse ;
+}
+
+.projetos .exibicao img{
+    width:100%;
+    border-radius: 3%;    
+}
+
+.projetos .exibicao .img{
+    max-width:40%;
+}
+
+.projetos .exibicao .descricao-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    flex-wrap: wrap-reverse;
+}
+
+.projetos .exibicao .descricao-projetos .titulo-projetos{
+    font-size: 30px;
+    font-weight: 700;
+    color: #001F5A;
+}
+
+.projetos .exibicao .descricao-projetos .parag-projetos{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.projetos .mais-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.projetos .mais-projetos .ver-mais{
+    font-size: 25px;
+    font-weight: 700 ;
+}
+
+.projetos .mais-projetos .gh{
+    width: 5%;
+}
+
+.projetos .mais-projetos .perfil-gh{
+    background-color: #24242F;
+    width:20%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos .mais-projetos .perfil-gh img{
+    width: 40%;
+    padding: 10%;
+}
+
+.projetos .mais-projetos .perfil-gh .nome{
+    font-size: 25px;
+    font-weight: 600;
+    color: #CDCDCD;
+}
+
+.projetos .mais-projetos .perfil-gh .user{
+    font-size: 18px;
+    font-weight: 400;
+    color: #5A5A5A;
+}
+
+.projetos .mais-projetos .perfil-gh .explore{
+    background-color: #3F3E4F;
+    font-size:20px;
+    font-weight: 600;
+    margin: 20px ;
+    padding: 10px 30px;
+    color:#CDCDCD;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.ondas2{
+    fill: rgb(55, 83, 154);
+}
+
+/* SEÇÃO "PROJETOS ACADÊMICOS" */
+
+
+
+
+
+
+
+

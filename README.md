@@ -1,6 +1,6 @@
 # Boas-vindas ao meu site!
 
-O presente repositório contém os códigos HTML, CSS, e JAVASCRIPT do meu site pessoal, juntamente ao seu link de hospedagem.
+O presente repositório contém os códigos HTML e CSS do meu site pessoal, juntamente ao seu link de hospedagem.
 
 O projeto busca apresentar pontos sobre minha vida profissional e pessoal.
 
