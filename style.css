@@ -69,7 +69,7 @@ a{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .linha-do-tempo:before{
@@ -139,10 +139,9 @@ a{
 
 .ondas1{
     fill: #6B94D3;
-    
+    margin-bottom: -6px;
 }
 
-
-
-
-
+.projetos{
+    background: linear-gradient(to bottom, #6B94D3, rgb(55, 83, 154));
+}
