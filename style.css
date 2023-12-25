@@ -269,8 +269,7 @@ nav ul a:hover{
 
 
 .academicos{
-    background: linear-gradient(to bottom, #5174CA, #517EF4);
-    
+    background: linear-gradient(to bottom, #5174CA, #517EF4); 
 }
 
 .academicos h2{
@@ -578,6 +577,93 @@ nav ul a:hover{
     fill: #618CED;
     margin-top: -1px;
 }
+
+.redes{
+    background: linear-gradient(to bottom, #597FD4, #517EF4); 
+
+}
+
+.redes h2{
+    font-size: 55px;
+    width: 20%; 
+    font-weight: 900;
+    padding: 2rem;
+    color: #001F5A;
+}
+
+.redes .links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes .links div{
+    width:20%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0;
+    margin: 5% 6%;
+    flex-wrap: wrap;
+}
+
+.redes .links div img{
+    width: 40%;
+    padding: 5%;
+}
+
+.redes .links div .nome{
+    font-size: 25px;
+    font-weight: 600;
+    color: #CDCDCD;
+}
+
+.redes .links div .explore{
+    font-size:20px;
+    font-weight: 600;
+    margin: 20px ;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.redes .links .github{
+    background-color: #24242F;
+}
+
+.redes .links .github .explore {
+    background-color: #3F3E4F;
+    color: #CDCDCD; 
+}
+
+.redes .links .linkedin{
+    background-color: #007AB9;
+}
+
+.redes .links .linkedin .nome{
+    color: #fff
+}
+
+.redes .links .linkedin .explore{
+    background-color: #fff;
+    color: #007AB9;
+}
+
+.redes .links .gmail{
+    background-color: #4571E1;
+}
+
+.redes .links .g mail .nome{
+    color: #fff
+}
+
+.redes .links .gmail .explore{
+    background-color: #fff;
+    color: #4571E1;
+}
+
+
+
 
 
 
