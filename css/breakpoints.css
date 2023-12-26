@@ -50,6 +50,10 @@
         border-bottom: rgba(30, 68, 163, 0.5);
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (min-width: 857px) and (max-width: 1069px) {
@@ -133,7 +137,7 @@
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 699px) {
+@media(max-width: 699px) {
 
     .projetos .mais-projetos .perfil-gh .nome {
         font-size: 15px;
@@ -241,7 +245,7 @@
     }
 
     .redes .links div{
-        width:20%;
+        width:30%;
         border-radius: 10%;
         display: flex;
         flex-direction: column;
@@ -274,6 +278,159 @@
     .redes .links{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     
+}
+
+@media (max-width: 460px){
+    .linha-do-tempo .descricao{
+        max-width: 85%;
+    }
+    
+    .projetos .mais-projetos .perfil-gh {
+        width: 50%  
+    }
+    
+    .projetos .mais-projetos .perfil-gh .nome {
+        font-size: 18px;
+        font-weight: 600;
+        color: #CDCDCD;
+    }
+
+    .projetos .mais-projetos .perfil-gh .user {
+        font-size: 13px;
+        font-weight: 400;
+        color: #5A5A5A;    
+    }
+
+    .projetos .mais-projetos .perfil-gh .explore{
+        background-color: #3F3E4F;
+        font-size:20px;
+        font-weight: 600;
+        margin: 20px ;
+        padding: 10px 25px;
+        color:#CDCDCD;
+        border-radius: 8px;
+        border-style: none;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    .academicos .acad .proj iframe {
+        width: 279px;
+        height: 156px;
+        padding-bottom: 10%;
+    }
+
+    .academicos .acad .proj {
+        width: 90%;
+    }
+
+    .academicos .acad .proj .logoEcollus{
+        width: 50%;
+        padding: 5%;
+    }
+    
+    .academicos .acad .proj .desc{
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 90%;
+        color:  #e4e4e4;
+        padding-bottom: 10%;
+        text-align: justify;
+    }
+
+    .academicos .acad .proj .onde-ver{
+        display: flex;
+        width: 100%;
+        padding: 4%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .academicos .acad .proj .onde-ver .gitEcollus, .academicos .acad .proj .onde-ver .hospedagem{
+        padding: 12% 20%;
+        
+    }
+
+    .academicos .acad .proj2 {
+        width: 90%
+    }
+
+    .academicos .acad .proj2 img{
+        width: 55%;
+        padding: 5%;
+    }
+
+    .academicos .acad .proj2 .desc{
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 90%;
+        color:  #e4e4e4;
+        padding-bottom: 10%;
+        text-align: justify;
+    }
+
+    .academicos .acad .proj2 .documentacao{
+        padding: 12% 20%;
+        
+    }
+
+    .academicos h2{
+        font-size: 48px;
+    }
+
+    .projetos .mais-projetos .gh{
+        width: 20%
+    }
+
+    .causas .sangue .texto{
+        color: #e4e4e4;
+        padding: 2% 0;
+        width: 80%;
+    }
+    
+    .causas .sangue .texto p{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 5% 0;
+        text-align: justify;
+    }
+
+    .redes .links div{
+        width:70%;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 0;
+        margin: 5% 6%;
+        flex-wrap: wrap;
+    }
+    
+    .redes .links div img{
+        width: 40%;
+        padding: 5%;
+    }
+    
+    .redes .links div .nome{
+        font-size: 25px;
+        font-weight: 600;
+        color: #CDCDCD;
+    }
+    
+    .redes .links div .explore{
+        font-size:20px;
+        font-weight: 600;
+        margin: 20px ;
+        padding: 10px 30px;
+        border-radius: 8px;
+        border-style: none;
+    }
+    
+
+
 }
