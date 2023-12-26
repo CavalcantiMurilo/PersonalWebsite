@@ -10,7 +10,7 @@
         box-shadow: none;
     }
 
-    nav .menu .elemento {
+    nav .menu #elemento {
         display: block;
     }
 
