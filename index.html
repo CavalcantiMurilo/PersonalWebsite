@@ -7,13 +7,22 @@
     <meta name="description" content="Página pessoal do Murilo contendo sua relação com a Tecnologia.">
     <meta name="author" content="Murilo Cavalcanti">
     <meta name="keywords" content="Tecnologia, Murilo Cavalcanti, Causas sociais, Projetos, Ecollus">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc8f58b594.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+
     <title>Murilo's Website</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
+    <header>
+
+    </header>
+
+    <nav id="nav">
+
+        <button class="mobile" id="mobile"><i class="fa-solid fa-bars"></i></button>
+        <ul class="menu">
             <a href="#jornada">
                 <li>Jornada</li>
             </a>
@@ -26,256 +35,318 @@
             <a href="#causas">
                 <li>Causas</li>
             </a>
+            <a href="#redes" id="elemento">
+                <li>Redes</li>
+            </a>
         </ul>
     </nav>
 
     <!--SEÇÃO "JORNADA" -->
+    <main>
 
-    <section class="jornada" id="jornada">
-        <h3>Boas-vindas à</h3>
-        <span class="titulo">
-            <h2>Jornada do Murilo</h2>
-        </span>
+        <div class="icones">
 
-        <div class="linha-do-tempo">
+            <div class="icones-expandidos">
 
-            <div class="ano2020">
-                <span class="ano">2020</span>
-                <div class="descricao">
-                    <span class="titulo">O QUE EU FAÇO?</span>
-                    <ul>
-                        <li class="parag-jornada">Começo meu Ensino médio e só penso em uma coisa: “Qual é minha
-                            profissão?”</li>
-                        <li class="parag-jornada">Em minha cidade, há uma Etec, porém com um só curso: Desenvolvimento
-                            de
-                            Sistemas.</li>
-                        <li class="parag-jornada">Nunca havia pensado na Tecnologia como minha área, mas eu posso tentar
-                            e
-                            descobrir se é para mim.</li>
-                    </ul>
-                </div>
+                <a href="#redes"><i class="fa-brands fa-github"></i></a>
+                <a href="#redes"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#redes"><i class="fa-solid fa-envelope"></i></a>
             </div>
 
-            <div class="ano2021">
-                <span class="ano">2021</span>
-                <div class="descricao">
-                    <span class="titulo">A DESCOBERTA</span>
-                    <ul>
-                        <li class="parag-jornada">Ingresso na Etec em Desenvolvimento de Sistemas.</li>
-                        <li class="parag-jornada">Começo a pegar gosto pela programação e passo a me identificar com a
-                            Tecnologia.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ano2022">
-                <span class="ano">2022</span>
-                <div class="descricao">
-                    <span class="titulo">CONCLUSÕES E UM INÍCIO</span>
-
-                    <ul>
-                        <li class="parag-jornada">Apresento meu TCC junto ao meu grupo com um <a href="#DoneAction">projeto de doação</a></li>
-                        <li class="parag-jornada">Me formo na Etec como Técnico em DS e, alguns meses depois, concluo o
-                            Ensino Médio.</li>
-                        <li class="parag-jornada">Busco me aprimorar mais na área e aplico para o vestibular da Fatec e
-                            para um curso tech profissionalizante do Instituto PROA</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="ano2023">
-                <span class="ano">2023</span>
-                <div class="descricao">
-                    <span class="titulo">É SÓ O COMEÇO...</span>
-                    <ul>
-                        <li class="parag-jornada">Entro para a Fatec no curso de Análise e Desenvolvimento de Sistemas
-                        </li>
-                        <li class="parag-jornada">Entro para o curso do Instituto PROA e desenvolvo, junto a meu grupo,
-                            nosso
-                            <a href="#Ecollus">projeto Demoday</a> que chamou a atenção de bastante gente 👀.</li>
-                    </ul>
-
-                </div>
-            </div>
-
+            <span class="fa-solid fa-circle-nodes"></span>
         </div>
 
-        <svg width="100%" viewBox="0 0 1627 193" class="ondas1" id="projetos" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0 91H75.5547C95.1157 91 114.607 93.3236 133.62 97.9221L212.5 117V117C355.408 165.057 512.39 145.826 639.47 64.6923L679.811 38.9375C759.717 -12.0781 861.772 -12.8573 942.448 36.9324L1062.42 110.971C1162.09 172.485 1285.55 181.367 1393 134.755V134.755L1531.96 86.9681C1557.81 78.0796 1584.95 73.5429 1612.28 73.5429H1627V193H0V91Z" />
-        </svg>
+        <section class="jornada" id="jornada">
+            <h3>Boas-vindas à</h3>
+            <span class="titulo">
+                <h2>Jornada do Murilo</h2>
+            </span>
 
+            <div class="linha-do-tempo">
 
-
-
-    </section>
-    <!--SEÇÃO "PROJETOS"-->
-
-    <section class="projetos">
-
-        <h2>Projetos</h2>
-
-        <div class="exibicao">
-            <div class="exib1">
-                <div class="img">
-                    <img src="img/jogo-da-memoria.png" alt="Imagem de jogo da memória">
-                </div>
-                <div class="descricao-projetos">
-                    <span class="titulo-projetos">JOGO DA MEMÓRIA</span>
-
-                    <p class="parag-projetos">Projeto de um jogo de memória divertido que conta, também, a quantidade de
-                        cliques e tempo gastos para sua conclusão. </p>
-                </div>
-            </div>
-
-            <div class="exib2">
-                <div class="img">
-                    <img src="img/to-do-list.png" alt="Imagem de um projeto de lista de tarefas">
-                </div>
-                <div class="descricao-projetos">
-                    <span class="titulo-projetos">TO-DO LIST</span>
-
-                    <p class="parag-projetos">Projeto de uma lista de tarefas, na qual o usuário pode criar, concluir e
-                        apagá-las.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mais-projetos">
-            <span class="ver-mais">Quer ver mais?</span>
-            <span class="ver-mais">Explore meu perfil do GitHub</span>
-            <img src="img/github.png" alt="Imagem de Icone do GitHub" class="gh">
-
-            <div class="perfil-gh">
-                <img src="img/foto-perfil-github.png" alt="">
-                <span class="nome">Murilo Cavalcanti</span>
-                <span class="user">CavalcantiMurilo - he/him</span>
-                <button class="explore"><span>Explore</span></button>
-            </div>
-        </div>
-
-    </section>
-
-    <!--SEÇÃO "PROJETOS ACADÊMICOS"-->
-    <section class="academicos" id="academicos">
-
-        <svg width="100%" class="ondas2" viewBox="0 0 1627 197" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M1627 102H1551.45C1531.88 102 1512.39 99.6764 1493.38 95.0779L1414.5 76V76C1271.59 27.9426 1114.61 47.1743 987.53 128.308L941.843 157.476C864.73 206.708 766.72 209.283 687.127 164.168L548.495 85.5879C452.608 31.2365 337.828 21.2575 234 58.2454V58.2454L95.0396 106.032C69.1925 114.92 42.0493 119.457 14.7165 119.457H0V0L1627 0V102Z" />
-        </svg>
-
-        <h2>Projetos Acadêmicos</h2>
-
-        <div class="acad">
-            <div class="proj" id="Ecollus">
-                <img src="img/Ecollus-logo.png" alt="Logo da Ecollus" class="logoEcollus">
-                <p class="desc">A vitrine virtual de cosméticos sustentáveis que leva mais visibilidade ao microempreendedor e mais viabilidade para seu consumidor por meio de serviços destinados a ambos.</p>
-
-                <div class="youtube">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X9ckoqsNMPw?si=7Z5ULllr2UeLBoLm"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-                <div class="onde-ver">
-                    <div class="gitEcollus">
-                        <span class="title">GitHub</span>
-                        <img src="img/Ecollus-gh.png" alt="foto da Ecollus">
-
-                        <span>EcollusDemoday</span>
-
-                        <button class="explorar">Explore</button>
-                    </div>
-
-                    <div class="hospedagem">
-                        <span>Site Hospedado</span>
-
-                        <button class="ver">Entrar</button>
+                <div class="ano2020">
+                    <span class="ano">2020</span>
+                    <div class="descricao">
+                        <span class="titulo">O QUE EU FAÇO?</span>
+                        <ul>
+                            <li class="parag-jornada">Começo meu Ensino médio e só penso em uma coisa: “Qual é minha
+                                profissão?”</li>
+                            <li class="parag-jornada">Em minha cidade, há uma Etec, porém com um só curso:
+                                Desenvolvimento
+                                de
+                                Sistemas.</li>
+                            <li class="parag-jornada">Nunca havia pensado na Tecnologia como minha área, mas eu posso
+                                tentar
+                                e
+                                descobrir se é para mim.</li>
+                        </ul>
                     </div>
                 </div>
-                <span class="contrib">Contribuições</span>
-                <span class="pessoas">Alanis Ribeiro, Caio de Oliveira, Giovanna Lacerda, Letícia Astorga, Luana Marques, Matheus Canesso, Murilo Cavalcanti.</span>
-            </div>
 
-            <div class="proj2" id="DoneAction">
-                <img src="img/DoneAction-logo.png" alt="Logo da Ecollus" class="logoEcollus">
-                <p class="desc">O aplicativo que atua no processo de doação e auxilia pessoas que precisam e individuos que não precisam mais de itens.</p>
-
-                <div class="documentacao">
-                    <span>Documentação do Projeto</span>
-
-                    <button class="ver">Ler</button>
+                <div class="ano2021">
+                    <span class="ano">2021</span>
+                    <div class="descricao">
+                        <span class="titulo">A DESCOBERTA</span>
+                        <ul>
+                            <li class="parag-jornada">Ingresso na Etec em Desenvolvimento de Sistemas.</li>
+                            <li class="parag-jornada">Começo a pegar gosto pela programação e passo a me identificar com
+                                a
+                                Tecnologia.</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <span class="contrib">Contribuições</span>
-                <span class="pessoas">Brenda Lucena, Camila Cesco, Debora Katiane, Felipe Ferreira, Julia Moreira, Murilo Cavalcanti,  Paulo Henrique Gonçalves, Stefany dos Santos, Vitor Gomes</span>
-            </div>
-        </div>
+                <div class="ano2022">
+                    <span class="ano">2022</span>
+                    <div class="descricao">
+                        <span class="titulo">CONCLUSÕES E UM INÍCIO</span>
 
-        <svg width="100%" viewBox="0 0 1627 193" class="ondas3" id="causas" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M0 91H75.5547C95.1157 91 114.607 93.3236 133.62 97.9221L212.5 117V117C355.408 165.057 512.39 145.826 639.47 64.6923L679.811 38.9375C759.717 -12.0781 861.772 -12.8573 942.448 36.9324L1062.42 110.971C1162.09 172.485 1285.55 181.367 1393 134.755V134.755L1531.96 86.9681C1557.81 78.0796 1584.95 73.5429 1612.28 73.5429H1627V193H0V91Z" />
-        </svg>
+                        <ul>
+                            <li class="parag-jornada">Apresento meu TCC junto ao meu grupo com um <a
+                                    href="#DoneAction">projeto de doação</a>.</li>
+                            <li class="parag-jornada">Me formo na Etec como Técnico em DS e, alguns meses depois,
+                                concluo o
+                                Ensino Médio.</li>
+                            <li class="parag-jornada">Busco me aprimorar mais na área e aplico para o vestibular da
+                                Fatec e
+                                para um curso tech profissionalizante do <a
+                                    href="https://www.proa.org.br/proprofissao/?gclid=Cj0KCQiA7aSsBhCiARIsALFvovxkJajnIjKhptIYNNndUSRuem44nBQ4mKI7MalPTS1AvB9uZRDDc_saAsZXEALw_wcB"
+                                    target="_blank">Instituto PROA</a>.</li>
+                        </ul>
+                    </div>
+                </div>
 
-    </section>
+                <div class="ano2023">
+                    <span class="ano">2023</span>
+                    <div class="descricao">
+                        <span class="titulo">É SÓ O COMEÇO...</span>
+                        <ul>
+                            <li class="parag-jornada">Entro para a Fatec no curso de Análise e Desenvolvimento de
+                                Sistemas.
+                            </li>
+                            <li class="parag-jornada">Entro para o curso do Instituto PROA e desenvolvo, junto a meu
+                                grupo,
+                                nosso
+                                <a href="#Ecollus">projeto Demoday</a> que chamou a atenção de bastante gente 👀.
+                            </li>
+                        </ul>
 
-    <!--SEÇÃO "CAUSAS"-->
+                    </div>
+                </div>
 
-    <section class="causas">
-        <h2>Causas sociais</h2>
-        
-        <div class="sangue">
-            <span class="titulo">DOE SANGUE!</span>
-
-            <div class="texto">
-                <p>Todo ser humano se alinha a causas que buscam impactar positivamente o mundo. Uma das causas em que eu procuro contribuir ativamente é a Doação de Sangue.</p>
-
-                <p>Conforme o Ministério da Saúde, atualmente, no Brasil, menos de 2% da população doa sangue com regularidade, número esse que acaba por não atender a demanda do país.</p>
-
-                <p>Por meio de Instituições, como a <span>Fundação Pró-Sangue</span>, é possível agendar sua doação, entender os requisitos necessários e saber mais sobre o processo!</p>
-            </div>
-
-            <div class="chamada">
-                <span class="chamada1">Sabia que uma só doação é estimada a ajudar até 4 pessoas?</span>
-
-                <span class="chamada2">Então, se possível, doe! E ajude pessoas que precisam!</span>
-            </div>
-        </div>
-
-    </section>
-
-    <!--SEÇÃO "REDES"-->
-
-    <section class="redes" id="redes">
-
-        <svg width="100%" class="ondas4" viewBox="0 0 1627 197" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M1627 102H1551.45C1531.88 102 1512.39 99.6764 1493.38 95.0779L1414.5 76V76C1271.59 27.9426 1114.61 47.1743 987.53 128.308L941.843 157.476C864.73 206.708 766.72 209.283 687.127 164.168L548.495 85.5879C452.608 31.2365 337.828 21.2575 234 58.2454V58.2454L95.0396 106.032C69.1925 114.92 42.0493 119.457 14.7165 119.457H0V0L1627 0V102Z" />
-        </svg>
-
-        <h2>Redes</h2>
-
-        <div class="links">
-            <div class="github">
-                <img src="img/foto-perfil-github.png" alt="foto de perfil Github">
-                <span class="nome">Murilo Cavalcanti</span>
-                <button class="explore"><span>GitHub</span></button>
             </div>
 
-            <div class="linkedin">
-                <img src="img/foto-perfil-linkedIn.png" alt="foto de perfil linkedin">
-                <span class="nome">Murilo Cavalcanti</span>
-                <button class="explore"><span>LinkedIn</span></button>
-            </div>
-            <div class="gmail">
-                <img src="img/foto-perfil-gmail.png" alt="foto de perfil Gmail">
-                <span class="nome">Murilo Cavalcanti</span>
-                <button class="explore"><span>Gmail</span></button>
-            </div>
-        </div>
+            <svg width="100%" viewBox="0 0 1627 193" class="ondas1" id="projetos" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 91H75.5547C95.1157 91 114.607 93.3236 133.62 97.9221L212.5 117V117C355.408 165.057 512.39 145.826 639.47 64.6923L679.811 38.9375C759.717 -12.0781 861.772 -12.8573 942.448 36.9324L1062.42 110.971C1162.09 172.485 1285.55 181.367 1393 134.755V134.755L1531.96 86.9681C1557.81 78.0796 1584.95 73.5429 1612.28 73.5429H1627V193H0V91Z" />
+            </svg>
 
-    </section>
 
+
+
+        </section>
+        <!--SEÇÃO "PROJETOS"-->
+
+        <section class="projetos">
+
+            <h2>Projetos</h2>
+
+            <div class="exibicao">
+                <div class="exib1">
+                    <div class="img">
+                        <a href="https://github.com/CavalcantiMurilo/Memory-Game" target="_blank">
+                            <img src="img/jogo-da-memoria.png" alt="Imagem de jogo da memória">
+                        </a>
+                    </div>
+                    <div class="descricao-projetos">
+                        <a href="https://github.com/CavalcantiMurilo/Memory-Game" target="_blank"><span
+                                class="titulo-projetos">JOGO DA MEMÓRIA</span></a>
+
+                        <p class="parag-projetos">Projeto de um jogo de memória divertido que conta, também, a
+                            quantidade de
+                            cliques e tempo gastos para sua conclusão. </p>
+                    </div>
+                </div>
+
+                <div class="exib2">
+                    <div class="img">
+                        <a href="https://github.com/CavalcantiMurilo/to-do-list" target="_blank">
+                            <img src="img/to-do-list.png" alt="Imagem de um projeto de lista de tarefas">
+                        </a>
+                    </div>
+                    <div class="descricao-projetos">
+                        <a href="https://github.com/CavalcantiMurilo/to-do-list" target="_blank"> <span
+                                class="titulo-projetos">TO-DO LIST</span></a>
+
+                        <p class="parag-projetos">Projeto de uma lista de tarefas, na qual o usuário pode criar,
+                            concluir e
+                            apagá-las.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mais-projetos">
+                <span class="ver-mais">Quer ver mais?</span>
+                <span class="ver-mais">Explore meu perfil do GitHub</span>
+                <img src="img/github.png" alt="Imagem de Icone do GitHub" class="gh">
+
+                <div class="perfil-gh">
+                    <img src="img/foto-perfil-github.png" alt="Imagem do perfil do GitHub do Murilo">
+                    <span class="nome">Murilo Cavalcanti</span>
+                    <span class="user">CavalcantiMurilo - he/him</span>
+                    <a href="https://github.com/CavalcantiMurilo" target="_blank">
+                        <button class="explore">Explore</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!--SEÇÃO "PROJETOS ACADÊMICOS"-->
+        <section class="academicos" id="academicos">
+
+            <svg width="100%" class="ondas2" viewBox="0 0 1627 197" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1627 102H1551.45C1531.88 102 1512.39 99.6764 1493.38 95.0779L1414.5 76V76C1271.59 27.9426 1114.61 47.1743 987.53 128.308L941.843 157.476C864.73 206.708 766.72 209.283 687.127 164.168L548.495 85.5879C452.608 31.2365 337.828 21.2575 234 58.2454V58.2454L95.0396 106.032C69.1925 114.92 42.0493 119.457 14.7165 119.457H0V0L1627 0V102Z" />
+            </svg>
+
+            <h2>Projetos Acadêmicos</h2>
+
+            <div class="acad">
+                <div class="proj" id="Ecollus">
+                    <img src="img/Ecollus-logo.png" alt="Logo da Ecollus" class="logoEcollus">
+                    <p class="desc">A vitrine virtual de cosméticos sustentáveis que leva mais visibilidade ao
+                        microempreendedor e mais viabilidade para seu consumidor por meio de serviços destinados a
+                        ambos.
+                    </p>
+
+                    <div class="youtube">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/X9ckoqsNMPw?si=7Z5ULllr2UeLBoLm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="onde-ver">
+                        <div class="gitEcollus">
+                            <span class="title">GitHub</span>
+                            <img src="img/Ecollus-gh.png" alt="foto da Ecollus">
+
+                            <span>EcollusDemoday</span>
+                            <a href="https://github.com/EcollusDemoday" target="_blank">
+                                <button class="explorar">Explore</button>
+                            </a>
+                        </div>
+
+                        <div class="hospedagem">
+                            <span>Site Hospedado</span>
+                            <a href="https://64a0fbceac33f71aa7fd4716--classy-quokka-326bdc.netlify.app/#"
+                                target="_blank">
+                                <button class="ver">Entrar</button>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="contrib">Contribuições</span>
+                    <span class="pessoas">Alanis Ribeiro, Caio de Oliveira, Giovanna Lacerda, Letícia Astorga, Luana
+                        Marques, Matheus Canesso, Murilo Cavalcanti.</span>
+                </div>
+
+                <div class="proj2" id="DoneAction">
+                    <img src="img/DoneAction-logo.png" alt="Logo DoneAction" class="logoEcollus">
+                    <p class="desc">O aplicativo que atua no processo de doação e auxilia pessoas que precisam e
+                        individuos
+                        que não precisam mais de itens.</p>
+
+                    <div class="documentacao">
+                        <span>Documentação do Projeto</span>
+                        <a href="https://ric.cps.sp.gov.br/handle/123456789/10509" target="_blank">
+                            <button class="ver">Ler</button>
+                        </a>
+                    </div>
+
+                    <span class="contrib">Contribuições</span>
+                    <span class="pessoas">Brenda Lucena, Camila Cesco, Debora Katiane, Felipe Ferreira, Julia Moreira,
+                        Murilo Cavalcanti, Paulo Henrique Gonçalves, Stefany dos Santos, Vitor Gomes.</span>
+                </div>
+            </div>
+
+            <svg width="100%" viewBox="0 0 1627 193" class="ondas3" id="causas" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 91H75.5547C95.1157 91 114.607 93.3236 133.62 97.9221L212.5 117V117C355.408 165.057 512.39 145.826 639.47 64.6923L679.811 38.9375C759.717 -12.0781 861.772 -12.8573 942.448 36.9324L1062.42 110.971C1162.09 172.485 1285.55 181.367 1393 134.755V134.755L1531.96 86.9681C1557.81 78.0796 1584.95 73.5429 1612.28 73.5429H1627V193H0V91Z" />
+            </svg>
+
+        </section>
+
+        <!--SEÇÃO "CAUSAS"-->
+
+        <section class="causas">
+            <h2>Causas sociais</h2>
+
+            <div class="sangue">
+                <span class="titulo">DOE SANGUE!</span>
+
+                <div class="texto">
+                    <p>Todo ser humano se alinha a causas que buscam impactar positivamente o mundo. Uma das causas em
+                        que
+                        eu procuro contribuir ativamente é a Doação de Sangue.</p>
+
+                    <p>Conforme o Ministério da Saúde, atualmente, no Brasil, menos de 2% da população doa sangue com
+                        regularidade, número esse que acaba por não atender a demanda do país.</p>
+
+                    <p>Por meio de Instituições, como a <a href="https://www.prosangue.sp.gov.br/home/"
+                            target="_blank"><span>Fundação Pró-Sangue</span></a>, é possível agendar sua doação,
+                        entender os requisitos necessários e saber mais sobre o processo!</p>
+                </div>
+
+                <div class="chamada">
+                    <span class="chamada1">Sabia que uma só doação é estimada a ajudar até 4 pessoas?</span>
+
+                    <span class="chamada2">Então, se possível, doe! E ajude pessoas que precisam!</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!--SEÇÃO "REDES"-->
+
+        <section class="redes" id="redes">
+
+            <svg width="100%" class="ondas4" viewBox="0 0 1627 197" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1627 102H1551.45C1531.88 102 1512.39 99.6764 1493.38 95.0779L1414.5 76V76C1271.59 27.9426 1114.61 47.1743 987.53 128.308L941.843 157.476C864.73 206.708 766.72 209.283 687.127 164.168L548.495 85.5879C452.608 31.2365 337.828 21.2575 234 58.2454V58.2454L95.0396 106.032C69.1925 114.92 42.0493 119.457 14.7165 119.457H0V0L1627 0V102Z" />
+            </svg>
+
+            <h2>Redes</h2>
+
+            <div class="links">
+                <div class="github">
+                    <img src="img/foto-perfil-github.png" alt="foto de perfil Github">
+                    <span class="nome">Murilo Cavalcanti</span>
+                    <a href="https://github.com/CavalcantiMurilo" target="_blank">
+                        <button class="explore">GitHub</button>
+                    </a>
+                </div>
+
+                <div class="linkedin">
+                    <img src="img/foto-perfil-linkedIn.png" alt="foto de perfil linkedIn">
+                    <span class="nome">Murilo Cavalcanti</span>
+                    <a href="https://www.linkedin.com/in/cavalcantidev/" target="_blank">
+                        <button class="explore">LinkedIn</button>
+                    </a>
+                </div>
+                <div class="gmail">
+                    <img src="img/foto-perfil-gmail.png" alt="foto de perfil Gmail">
+                    <span class="nome">Murilo Cavalcanti</span>
+                    <a href="mailto:murilocor2004@gmail.com" target="_blank">
+                        <button class="explore">Gmail</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
 </body>
+<script src="js/script.js"></script>
+
 </html>

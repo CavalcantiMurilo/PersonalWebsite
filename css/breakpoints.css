@@ -1,0 +1,40 @@
+@media (max-width: 600px){
+
+    main .icones{
+        display: none;
+    }
+
+    nav{
+        background: transparent;
+        backdrop-filter:unset;
+        box-shadow: none;
+    }
+
+    nav .menu .elemento{
+        display: block;
+    }
+    
+    nav .mobile {
+        display: block;
+        z-index: 10000;
+    }
+
+    nav .menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 10px;
+        background-color: rgba(87, 130, 242);
+        height: 80vh;
+        z-index: 999;
+
+    }
+
+    #nav.active .menu{
+        display: block;
+    }
+
+    .menu li{
+        padding: 4%;
+    }
+}

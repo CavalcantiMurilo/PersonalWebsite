@@ -6,6 +6,14 @@
     font-family: Inter;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+nav .mobile{
+    display: none;
+}
+
 nav{
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
     backdrop-filter: blur(20px);
@@ -22,17 +30,58 @@ nav ul{
     font-weight: 600;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 25px;
 }
 
 nav ul a{
-    color: #2b3141;
+    color: #1e2330;
 }
 
 nav ul a:hover{
     color: #5b6992;
 }
 
+nav .menu #elemento{
+    display:none;
+}
+
+/* conexão */
+
+.icones{
+    position: fixed;
+    z-index: 100;
+    top: 20%;
+    right: 20px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(204, 215, 255);
+    border-radius: 10px;
+}
+
+.icones .icones-expandidos{
+    display: none;
+    
+}
+
+.icones i, .icones span{
+    font-size: 30px;
+    color: #001F5A
+}
+
+.icones i:hover, .icones span:hover{
+    color: rgb(59, 58, 58)
+}
+
+.icones:hover .icones-expandidos{
+    display: flex;
+    gap: 1rem
+}
+
+.icones:hover  span{
+    display: none;
+}
 
 /* SEÇÃO "JORNADA */
 
@@ -99,7 +148,7 @@ nav ul a:hover{
 
 .linha-do-tempo .parag-jornada{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .ano2020, .ano2021, .ano2022, .ano2023{
@@ -138,6 +187,18 @@ nav ul a:hover{
  .ano2020 .ano, .ano2022 .ano{
     margin-left: 30%;
 }
+
+.linha-do-tempo .descricao li a{
+    color: #dbdbdb;
+    text-decoration: underline ;
+    transition: .5s ease;
+}
+
+.linha-do-tempo .descricao li a:hover{
+    color: #001F5A;
+}
+
+
 
 
 /* SEÇÃO "PROJETOS" */
@@ -180,7 +241,12 @@ nav ul a:hover{
 
 .projetos .exibicao img{
     width:100%;
-    border-radius: 3%;    
+    border-radius: 3%;
+    transition: .5s ease;    
+}
+
+.projetos .exibicao img:hover{
+    transform: scale(1.1);   
 }
 
 .projetos .exibicao .img{
@@ -200,6 +266,11 @@ nav ul a:hover{
     font-size: 30px;
     font-weight: 700;
     color: #001F5A;
+    transition: .5s ease;
+}
+
+.projetos .exibicao .descricao-projetos .titulo-projetos:hover{
+    font-size: 31px;
 }
 
 .projetos .exibicao .descricao-projetos .parag-projetos{
@@ -259,6 +330,14 @@ nav ul a:hover{
     color:#CDCDCD;
     border-radius: 8px;
     border-style: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+
+.projetos .mais-projetos .perfil-gh .explore:hover{
+    background-color: #444C56;
+    transform: scale(1.1);
 }
 
 .ondas2{
@@ -358,11 +437,18 @@ nav ul a:hover{
     background-color: #3F3E4F;
     border-style: none;
     color: #e4e4e4;
-    padding: 5% 8%;
+    padding: 12px 12px;
     font-size: 20px;
     font-weight: 500;
     border-radius: 12px;
-    margin: 10%;
+    margin: 10% 0;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.academicos .acad .proj .onde-ver .gitEcollus button:hover{
+    transform: scale(1.1);
+    background-color: #545368;
 }
 
 
@@ -389,11 +475,18 @@ nav ul a:hover{
     background-color: #3F3E4F;
     border-style: none;
     color: #e4e4e4;
-    padding: 5% 8%;
+    padding: 12px 12px;
     font-size: 20px;
     font-weight: 500;
     border-radius: 12px;
-    margin: 10%;
+    margin: 10% 0;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.academicos .acad .proj .onde-ver .hospedagem .ver:hover{
+    transform: scale(1.1);
+    background-color: #545368;
 }
 
 .academicos .acad .proj .contrib{
@@ -465,11 +558,18 @@ nav ul a:hover{
     background-color: #3F3E4F;
     border-style: none;
     color: #e4e4e4;
-    padding: 4% 8%;
+    padding: 12px 26px;
     font-size: 20px;
     font-weight: 500;
     border-radius: 12px;
-    margin: 10%;
+    margin: 10% 0;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.academicos .acad .proj2 .documentacao .ver:hover{
+    transform: scale(1.1);
+    background-color: #545368;
 }
 
 .academicos .acad .proj2 .contrib{
@@ -537,13 +637,18 @@ nav ul a:hover{
 }
 
 .causas .sangue .texto p span{
-    font-size: 21px;
+    font-size: 20px;
     color:rgb(182, 43, 43);
     font-weight: 600;
     background-color: #e4e4e4;
     border-radius: 10px;
     padding: .2% .4%;
     cursor: pointer;
+    transition: .5s ease;
+}
+
+.causas .sangue .texto p span:hover{
+    font-size: 22px;
 }
 
 .causas .sangue .chamada{
@@ -634,6 +739,14 @@ nav ul a:hover{
 .redes .links .github .explore {
     background-color: #3F3E4F;
     color: #CDCDCD; 
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.redes .links .github .explore:hover{
+    background-color: #444C56;
+    transform: scale(1.1);
+    color: white
 }
 
 .redes .links .linkedin{
@@ -647,19 +760,35 @@ nav ul a:hover{
 .redes .links .linkedin .explore{
     background-color: #fff;
     color: #007AB9;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.redes .links .linkedin .explore:hover{
+    background-color: #3d8bb3;
+    transform: scale(1.1);
+    color: white
 }
 
 .redes .links .gmail{
     background-color: #4571E1;
 }
 
-.redes .links .g mail .nome{
+.redes .links .gmail .nome{
     color: #fff
 }
 
 .redes .links .gmail .explore{
     background-color: #fff;
     color: #4571E1;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.redes .links .gmail .explore:hover{
+    background-color: #7b96db;
+    transform: scale(1.1);
+    color: white
 }
 
 
